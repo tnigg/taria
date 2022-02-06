@@ -26,6 +26,7 @@
 </head>
 
 <body>
+  <div class="container-fluid">
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -186,18 +187,18 @@ Diese Unterkunft ist nur 15 Minuten Fußweg von Leutascher Geisterklamm entfernt
 	<h3>alte & neue Mühle</h3>
 
 <!-- Images used to open the lightbox -->
-<div class="row">
+<div class="container-fluid">
   <div class="column">
-    <img src="images/slide1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="images/slide1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow img-responsive">
   </div>
   <div class="column">
-    <img src="images/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="images/slide2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow img-responsive">
   </div>
   <div class="column">
-    <img src="images/slide3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    <img src="images/slide3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow img-responsive">
   </div>
   <div class="column">
-    <img src="images/slide4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    <img src="images/slide4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow img-responsive">
   </div>
 </div>
 
@@ -261,7 +262,7 @@ Diese Unterkunft ist nur 15 Minuten Fußweg von Leutascher Geisterklamm entfernt
   <p>&copy; 2022 <a href="mailto:emglanzer@ferrarischule.at">Emma Glanzer</a></p> 
   
 </footer>
-
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script>  
@@ -292,7 +293,8 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var captionText = document.getElementById("caption");  
+ 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -302,8 +304,7 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  
 }
 </script>
 

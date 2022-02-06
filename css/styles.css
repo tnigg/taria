@@ -3,6 +3,7 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: #f5f6f7;
+  overflow: scroll;
 }
 p {
   font-size: 18px;
@@ -62,7 +63,7 @@ h1 {
 .bg-2 {
   background-color: #262626;
   color: #ffffff;
-  padding: 100px;
+
   font-weight: bold !important;
 }
 .bg-3 {
@@ -135,7 +136,7 @@ footer a:hover {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 0 8;
 }
 
 .row:after {
@@ -150,7 +151,9 @@ footer a:hover {
   width: 25%;
 }
 
-.row {
+.column img {
+  max-width: 100%;
+  width: 100%;
 }
 
 /* The Modal (background) */
@@ -169,7 +172,6 @@ footer a:hover {
 
 /* Modal Content */
 .modal-content {
-  position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
