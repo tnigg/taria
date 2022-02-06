@@ -150,6 +150,9 @@ footer a:hover {
   width: 25%;
 }
 
+.row {
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -245,6 +248,7 @@ footer a:hover {
 
 img.demo {
   opacity: 0.6;
+  width: 100%;
 }
 
 .active,
