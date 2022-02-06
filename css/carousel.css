@@ -1,0 +1,19 @@
+.slide_img {
+  opacity: 0;
+}
+
+.carousel-indicators {
+  margin-top: 10px;
+}
+
+.carousel-indicators li {
+  background-color: yellow;
+}
+
+.carousel-indicators .active {
+  background-color: red;
+}
+
+.carousel-inner {
+  margin-top: -280px;
+}

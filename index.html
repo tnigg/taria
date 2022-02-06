@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
 
 	<meta name="description" content="Dies ist die offizielle Website der alten & neuen Mühle">
 	<meta name="keywords" content="Mühle, Haus, alte Mühle, neue Mühle, Winter, Sommer, Urlaub">
@@ -16,7 +15,9 @@
 	<meta name="robots" content="noindex,follow">
 	
  <link href="css/styles.css" rel="stylesheet">
- 
+ <!-- Custom styles for this carousel -->
+ <link href="css/carousel.css" rel="stylesheet">
+
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -109,23 +110,38 @@ Diese Unterkunft ist nur 15 Minuten Fußweg von Leutascher Geisterklamm entfernt
 <div id="rezessionen" class="container-fluid bg-4">
  <h3>Was unsere Gäste sagen</h3><br>
 	
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+  <div id="myCarousel" class="carousel slide container" data-ride="carousel">   
+    <ol class="carousel-indicators">      
+      <li data-target="#myCarousel" data-slide-to="0" class="active indicator"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="indicator"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="indicator"></li>
+    </ol>  
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"Sensationelles Hotel mit einzigartigem Charme und wunderschöner Architektur!"<br><span>Klaus</span></h4>
+        <img src="https://via.placeholder.com/1600x600" alt="" class="slide_img">
+        <div class="container">
+          <div class="carousel-caption">
+            <h4>"Sensationelles Hotel mit einzigartigem Charme und wunderschöner Architektur!"<br><span>Klaus</span></h4>
+          </div>
+        </div>
       </div>
       <div class="item">
-        <h4>"Auf der Sonnenseite und mitten im Herzen: Hotel mit besonderem Flair und starker authentischer Persönlichkeit."<br><span>Laura</span></h4>
+        <img src="https://via.placeholder.com/1600x600" alt="" class="slide_img">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>"Auf der Sonnenseite und mitten im Herzen: Hotel mit besonderem Flair und starker authentischer Persönlichkeit."<br><span>Laura</span></h4>
+            </div>
+          </div>
       </div>
       <div class="item">
-        <h4>"Großartiges Familienhotel, das bis heute seinen exzellenten Ruf verteidigen kann."<br><span>Steffi</span></h4>
+        <img src="https://via.placeholder.com/1600x600" alt="" class="slide_img">
+          <div class="container">
+            <div class="carousel-caption">
+             <h4>"Großartiges Familienhotel, das bis heute seinen exzellenten Ruf verteidigen kann."<br><span>Steffi</span></h4>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -245,7 +261,9 @@ Diese Unterkunft ist nur 15 Minuten Fußweg von Leutascher Geisterklamm entfernt
   
 </footer>
 
-<script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script>  
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
